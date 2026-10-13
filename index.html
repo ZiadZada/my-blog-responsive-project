@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Blog: notes about learning HTML and CSS.">
+    <title>Home | My Blog</title>
+    <link rel="stylesheet" href="css/Stylesheet.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header>
+        <div class="container header-content">
+            <h1><a href="index.html">My Blog</a></h1>
+            <nav aria-label="Main navigation">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="container">
+        <section aria-labelledby="latest-posts">
+            <h2 id="latest-posts">Latest Posts</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Learning HTML</h3>
+                    <p>HTML is the foundation of every website. Semantic elements help give a page clear structure.</p>
+                    <a href="about.html">Learn about my skills</a>
+                </article>
+                <article class="card">
+                    <h3>Why CSS Matters</h3>
+                    <p>CSS makes pages look great and helps layouts adapt to different screen sizes.</p>
+                    <a href="contact.html">Send me a message</a>
+                </article>
+                <article class="card">
+                    <h3>Practice Makes Progress</h3>
+                    <p>Small projects are a useful way to practice new web development skills.</p>
+                    <a href="#css-modal">Open the CSS-only modal demo</a>
+                </article>
+            </div>
+        </section>
+
+        <aside class="alert alert-info" role="note" aria-labelledby="tip-title">
+            <h2 id="tip-title">Quick tip</h2>
+            <p>Use semantic HTML, clear labels, and visible keyboard focus to make a website easier to use.</p>
+        </aside>
+
+        <section class="component-demo" aria-labelledby="modal-demo-title">
+            <h2 id="modal-demo-title">Modal Window Demo</h2>
+            <p>This modal is controlled by CSS with the <code>:target</code> selector and uses no JavaScript.</p>
+            <a class="button" href="#css-modal">Open modal</a>
+        </section>
+
+        <section id="css-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <div class="modal-content">
+                <a class="modal-close" href="#main-content" aria-label="Close modal">×</a>
+                <h2 id="modal-title">Welcome to My Blog</h2>
+                <p>This is a CSS-only modal window. Select Close to return to the page.</p>
+                <a class="button button-secondary" href="#main-content">Close</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 My Blog</p>
+        </div>
+    </footer>
+</body>
+</html>
